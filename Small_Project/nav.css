@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family  :Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background-color: blue;
+    padding: 50px 0;
+}
+
+.nav-links
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease,transform 0.3s ease;
+    display: inline-block;
+}
+.nav-links a:visited {
+    color: white;
+}
+.nav-links li:hover{
+    
+    color: red;
+    transform :scale(1.1);
+}
+
+
+.nav-links a:hover {
+    color: red;
+}
+@media (max-width : 600px){
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
